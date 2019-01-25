@@ -22,3 +22,8 @@ function nmma_search_form($form, &$form_state) {
 
   return $form;
 }
+
+function nmma_search_form_submit($form, &$form_state) {
+  $combine = $form_state['values']['combine'];
+  drupal_goto('/the-colletion-search?combine='.$combine);
+}
