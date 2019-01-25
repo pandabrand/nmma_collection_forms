@@ -5,14 +5,13 @@ function nmma_search_form($form, &$form_state) {
   $form['#action'] = url('the-collection-search');
 
   // search field.
-  $form['name'] = array(
+  $form['name']['combine'] = array(
     '#title' => t('Search'),
     '#type' => 'textfield',
-    '#name' => t('combine'),
     '#attributes' => array(
       'placeholder' => t('Discover by Artist Name, Title, or Keyword')
     ),
-    '#required' => TRUE,
+    '#required' => FALSE,
   );
 
   $form['submit_button'] = array(
@@ -25,5 +24,5 @@ function nmma_search_form($form, &$form_state) {
 
 function nmma_search_form_submit($form, &$form_state) {
   $combine = $form_state['values']['combine'];
-  drupal_goto('/the-colletion-search?combine='.$combine);
+  $form_state['redirect'] = 'the-collection-search?combine=' . urlencode($combine);
 }
