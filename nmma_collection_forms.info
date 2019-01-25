@@ -1,0 +1,16 @@
+name = "Migrate NMMA Collection Forms"
+description = "Module to create the forms for NMMA Collection"
+package = "Other"
+core = 7.x
+
+dependencies[] = field
+dependencies[] = file
+dependencies[] = image
+dependencies[] = number
+dependencies[] = text
+dependencies[] = options
+dependencies[] = taxonomy
+dependencies[] = date
+
+; include the files that contain the Migrate classes
+files[] = nmma_collection_forms.inc
