@@ -3,7 +3,7 @@
 function nmma_search_form($form, &$form_state) {
   // action
   $form['#action'] = url('the-collection-search');
-
+  $form['#method'] = 'get';
   // search field.
   $form['name']['combine'] = array(
     '#title' => t('Search'),
