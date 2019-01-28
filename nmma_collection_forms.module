@@ -82,22 +82,22 @@ function create_corporate_tour_form($form, &$form_state)
     '#required' => TRUE,
   );
 
-  $form['theme'] = array(
-    '#title' => t('Theme'),
-    '#type' => 'select',
-    '#options' => array(
-      'Community',
-      'Urban Landscape',
-      'Conceptual / Collage'
-    )
-  );
+  // $form['theme'] = array(
+  //   '#title' => t('Theme'),
+  //   '#type' => 'select',
+  //   '#options' => array(
+  //     'Community',
+  //     'Urban Landscape',
+  //     'Conceptual / Collage'
+  //   )
+  // );
 
-  $form['file'] = array(
-    '#type' => 'file',
-    '#title' => t('Image'),
-    '#description' => t('Upload a file, allowed extensions: jpg, jpeg, png, gif'),
-    '#required' => TRUE
-  );
+  // $form['file'] = array(
+  //   '#type' => 'file',
+  //   '#title' => t('Image'),
+  //   '#description' => t('Upload a file, allowed extensions: jpg, jpeg, png, gif'),
+  //   '#required' => TRUE
+  // );
 
   $form['entry_agreement'] = array(
     '#type' => 'checkbox',
