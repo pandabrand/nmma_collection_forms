@@ -51,7 +51,7 @@ function hook_menu()
 //   );
 // }
 
-function create_corporate_tour_form($form, &$form_state)
+function open_access_form_form($form, &$form_state)
 {
   $form['#action'] = '#open_access_form';
 
