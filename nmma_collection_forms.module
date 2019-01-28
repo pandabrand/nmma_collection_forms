@@ -107,8 +107,8 @@ function open_access_form_form($form, &$form_state)
   $form["buttons"] = array(
       '#value'=>'submit',
       '#type'=>'submit',
-      '#attributes' => array('class'=>'btn-add-contact'),
-      '#submit'=>array('open_access_entry_form_submit')
+      '#attributes' => array('class'=>'btn-primary'),
+      // '#submit'=>array('open_access_entry_form_submit')
   );
 
   return $form;
