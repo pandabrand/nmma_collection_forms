@@ -30,17 +30,17 @@ function nmma_search_form_submit($form, &$form_state) {
   ));
 }
 
-function hook_menu()
-{
-	$items ['create_open_access_entry_menu'] = array (
-		   'page callback'		=>	'drupal_get_form',
-		   'title'				=>	'Open Access Entry form',
-		   'page arguments'		=>	array ('open_access_entry_form'),
-		   'access arguments'	=>	array ('create open_access_entry_form form' ),
-		    'type'				=>	MENU_NORMAL_ITEM
-		   );
-	return $items;
-}
+// function hook_menu()
+// {
+// 	$items ['create_open_access_entry_menu'] = array (
+// 		   'page callback'		=>	'drupal_get_form',
+// 		   'title'				=>	'Open Access Entry form',
+// 		   'page arguments'		=>	array ('open_access_entry_form'),
+// 		   'access arguments'	=>	array ('create open_access_entry_form form' ),
+// 		    'type'				=>	MENU_NORMAL_ITEM
+// 		   );
+// 	return $items;
+// }
 
 // function hook_theme($existing, $type, $theme, $path){
 // 	return array(
