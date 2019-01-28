@@ -64,7 +64,7 @@ function open_access_form_form($form, &$form_state)
     '#required' => TRUE,
   );
 
-  $form['name']['first'] = array(
+  $form['name_first'] = array(
     '#title' => t('First Name'),
     '#type' => 'textfield',
     '#attributes' => array(
@@ -73,7 +73,7 @@ function open_access_form_form($form, &$form_state)
     '#required' => TRUE,
   );
 
-  $form['name']['last'] = array(
+  $form['name_last'] = array(
     '#title' => t('Last Name'),
     '#type' => 'textfield',
     '#attributes' => array(
