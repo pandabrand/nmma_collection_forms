@@ -99,17 +99,17 @@ function open_access_form_form($form, &$form_state)
   //   '#required' => TRUE
   // );
 
-  $form['entry_agreement'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Replace image with scrolling images from collection. First image shared via google drive Credit line.'),
-  );
+  // $form['entry_agreement'] = array(
+  //   '#type' => 'checkbox',
+  //   '#title' => t('Replace image with scrolling images from collection. First image shared via google drive Credit line.'),
+  // );
 
-  $form["submit_button"] = array(
-      '#value'=>'submit',
-      '#type'=>'submit',
-      '#attributes' => array('class'=>'btn-primary'),
-      // '#submit'=>array('open_access_entry_form_submit')
-  );
+  // $form["submit_button"] = array(
+  //     '#value'=>'submit',
+  //     '#type'=>'submit',
+  //     '#attributes' => array('class'=>'btn-primary'),
+  //     // '#submit'=>array('open_access_entry_form_submit')
+  // );
 
   return $form;
 }
