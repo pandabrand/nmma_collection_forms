@@ -82,6 +82,15 @@ function open_access_form_form($form, &$form_state)
     '#required' => TRUE,
   );
 
+  $form['description'] = array(
+    '#title' => t('Please describe your work in a few words.'),
+    '#type' => 'textarea',
+    '#attributes' => array(
+      'placeholder' => t('My works is...')
+    ),
+    '#required' => TRUE,
+  );
+
   $form['theme'] = array(
     '#title' => t('Theme'),
     '#type' => 'select',
@@ -89,7 +98,8 @@ function open_access_form_form($form, &$form_state)
       'Community',
       'Urban Landscape',
       'Conceptual / Collage'
-    )
+    ),
+    '#required' => TRUE
   );
 
   $form['file'] = array(
