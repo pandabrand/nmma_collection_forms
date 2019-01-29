@@ -92,12 +92,12 @@ function open_access_form_form($form, &$form_state)
     )
   );
 
-  // $form['file'] = array(
-  //   '#type' => 'file',
-  //   '#title' => t('Image'),
-  //   '#description' => t('Upload a file, allowed extensions: jpg, jpeg, png, gif'),
-  //   '#required' => TRUE
-  // );
+  $form['file'] = array(
+    '#type' => 'file',
+    '#title' => t('Image'),
+    '#description' => t('Upload a file, allowed extensions: jpg, jpeg, png, gif'),
+    '#required' => TRUE
+  );
 
   // $form['entry_agreement'] = array(
   //   '#type' => 'checkbox',
